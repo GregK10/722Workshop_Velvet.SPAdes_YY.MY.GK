@@ -1,4 +1,4 @@
-# Readme
+# _De novo_ assembly workshop 
 
 This Github repopsitory is a workshop project for our 722 class in 2021.
 
