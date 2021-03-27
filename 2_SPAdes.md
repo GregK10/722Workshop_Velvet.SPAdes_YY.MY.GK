@@ -19,5 +19,6 @@ Original Reads --------------> Corrected Reads --------------> Simplified De Bru
                Error Correction           De Bruijn Graph Processing                     Repeat Resolution        Postprocessing
 ```
 
+## Workshop
 
 
