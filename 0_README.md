@@ -1,4 +1,4 @@
-# 722Workshop_Velvet.SPAdes_YY.MY.GK
+# Readme
 
 This Github repopsitory is a workshop project for our 722 class in 2021.
 
