@@ -14,8 +14,10 @@ Input formats it takes:
 
 **The overall assembly process:**
 
+```
 Original Reads --------------> Corrected Reads --------------> Simplified De Bruijn Graph --------------> Contigs --------------> Final Contigs
                Error Correction           De Bruijn Graph Processing                     Repeat Resolution        Postprocessing
+               ```
 
 
 
