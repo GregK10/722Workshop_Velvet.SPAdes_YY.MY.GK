@@ -6,7 +6,7 @@ SPAdes (**S**aint **P**etersburg **A**ssembler) is a genome assembly algorithm w
 SPAdes is not suitable for use with larger genomes (e.g. mammalian size genomes).
 
 Input formats it takes: 
-- Illumina Paired-end reads, mate-paires and single reads 
+- Illumina Paired-end reads, mate-pairs and single reads 
 - IonTorrent
 - PacBio
 - Oxford Nanopore
