@@ -3,7 +3,7 @@
 This Github repopsitory is a workshop project for our 722 class in 2021.
 
 # Purpose of the project
-Our intentions for this project is to demonstrate de nove whole genome assembly by comparing two assemblers:
+Our intentions for this project is to demonstrate _de novo_ whole genome assembly by comparing two assemblers:
 - SPAdes
 - Velvet
 
