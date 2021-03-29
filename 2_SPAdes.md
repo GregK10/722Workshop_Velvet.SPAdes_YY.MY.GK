@@ -30,7 +30,7 @@ Running SPAdes is pretty straigtforward.
 - ```--pe1-1 [file]``` is the file with left reads for paired-end library number. In our workshop we use ```B4546_1s.fastq```
 - ```--pe1-2 [file]``` is the file with right reads for paired-end library number. In our workshop we use ```B4546_2s.fastq```
 - ```--careful``` is a flag for illumina reads that minimizes number of mismatches and short indels in the final contigs. Also runs MismatchCorrector – a post processing tool, which uses BWA tool (comes with SPAdes). This option is recommended only for assembly of small genomes
-- ```-o spades``` is the output file
+- ```-o [file]``` is the output directory. We named it spades
 
 ### Understanding the SPAdes Output
 SPAdes creates its own directory in your current directory. There are many outputs that are created and we have listed them below
