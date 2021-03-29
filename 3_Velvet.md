@@ -64,16 +64,16 @@ For out results, imput the following script
 ```
 #### In addition to the VelvetOptimiser function, two flags are necessary. The flags require their parameter string to be encased with either '' or ""
 - ```-d [directory_name]``` will create a directory for our output files
-- ```-f {[-file_format][-read_type] filename}``` contains similar information to the velveth function.
+- ```-f {[-file_format][-read_type] filename}``` contains similar information to the velveth function
 
 #### Some details on Velvetoptimiser
 - The optimisation function used for k-mer choice default 'n50' but this can be changed with the flag ```--optFuncKmer```
-- This time we are just using default range of hash values (or kmer) to try of 19 to 31, with the steps being 2 (the program is trying to find the most optimal hash size)
+- This time we are just using default range of hash values (or k-mer) to try of 19 to 31, with the steps being 2 (the program is trying to find the most optimal hash size)
  	-  In our workshop, the optimal hash value was determined to be 25
-- The flag ```-shortPaired``` represents that illumina paired end reads are used. 
+- The flag ```-shortPaired``` represents that illumina paired end reads are used
 - coverage cutoff can also be set automatically to half the length weighted median contig coverage depth. Although you may wish to optimise this parameter in further iterations, this option allows you to quickly obtain a decent assembly in your first run
 
-### The output directory contains 8 files.
+### The output directory contains 8 files
 
 29-03-2021-12-37-05_Logfile.txt  
 contigs.fa  
