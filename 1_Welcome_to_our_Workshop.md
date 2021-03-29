@@ -20,7 +20,7 @@ These are not the full length F files as that will take SPAdes too long to run (
 ### Creating some directories
 While we are in our ```first_student_workshop``` directory, lets make 2 additional directories for our output files from both asspeblers, as well as a directory for our QUAST analysis.
 ```
-mkdir SPAdes_out ; mkdir velvet_out ; mkdir quast
+mkdir velvet_out; mkdir quast
 ```
 #### We are all set to run both of de novo asemblers. Click [here](https://github.com/GregK10/722Workshop_Velvet.SPAdes_YY.MY.GK/blob/main/2_SPAdes.md) to assemble a genome using SPAdes!
 
