@@ -36,6 +36,6 @@ scp -r NAME@info.mcmaster.ca:~/quast/ .
 ```
 We can open them now and see how our two de novo assemblers compare to each other.
 
-### If you are interested in further readings, we have additional information on the 3 programs we demonstrated today, found [here](https://github.com/GregK10/722Workshop_Velvet.SPAdes_YY.MY.GK/blob/main/5_Additional_readings.md).
+#### If you are interested in further readings, we have additional information on the 3 programs we demonstrated today, found [here](https://github.com/GregK10/722Workshop_Velvet.SPAdes_YY.MY.GK/blob/main/5_Additional_readings.md).
 ### We hope you all enjoyed our workshop and had some fun!
 
