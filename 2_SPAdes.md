@@ -32,4 +32,6 @@ Running SPAdes is pretty straigtforward.
 - ```--careful``` is a flag for illumina reads that minimizes number of mismatches and short indels in the final contigs. Also runs MismatchCorrector – a post processing tool, which uses BWA tool (comes with SPAdes). This option is recommended only for assembly of small genomes
 - ```-o spades``` is the output file
 
+### Understanding the SPAdes Output
+
 
