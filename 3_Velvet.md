@@ -30,13 +30,16 @@ velvetg velvet_31 -cov_cutoff auto
 - ```Velveth``` reads sequence files and builds a dictionary of all words of length k, where k is the default max hash value of 31, thus defining exact local alignments between the reads. Analyzes kmers in the reads in preparation for assembly
 - ```Velvetg``` reads the alignments produced by ```Velveth```, builds a de Bruijn graph from them, removes errors and simplifies the graph and resolve repeats. Constructs the assembly and filters contigs from the graph
 
-##### Flags for ```velveth```
+#### Flags for ```velveth```
 - ```velvet_31``` is the file name for the dictionary
 - ```-shortpaired``` is the type of reads we are using
 - ```-fastq``` is read type file
 - ```-separate```  read1 and read2 are in separate files. Might be a useless flag
 
-##### Flags for ```velvetg```
+#### Flags for ```velvetg```
+- ```velvet_31``` is the file name for the dictionary
+- ```-cov_cutoff auto``` is the coverage cutoff value. We have it set to auto
+# - ```-exp_cov auto``` is the expercted coveregae (**EDIT**)
 
 ## Velvetoptimiser 
 Now we want to optomize our velvet runs using Velvetoptimiser. It searches a supplied hash value range (k-mer size) for the optimum, estimates the expected coverage and then searches for the optimum coverage cutoff. It does this by performing many runs of Velvet. 
