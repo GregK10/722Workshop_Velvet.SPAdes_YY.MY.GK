@@ -17,7 +17,7 @@ Similar to SPAdes, Velvet is a de novo assembler designed for short reads. Velve
  
  Velvet is useful as it can produce long contigs in excess of 150kb from paired end short reads
  
- ## Velvet Workshop
+## Velvet Workshop
  
 Similar to SPAdes, the code to run Velvet is straightforward
  
@@ -25,7 +25,7 @@ Similar to SPAdes, the code to run Velvet is straightforward
 velveth velvet_31 31 -shortPaired -fastq -separate ../B4546_1.fastq ../B4546_2.fastq
 velvetg velvet_31 -cov_cutoff auto
 ```
-##### Here we are using two main velvet funtions ```velveth```and ```velvetg```
+#### Here we are using two main velvet funtions ```velveth```and ```velvetg```
 
 - ```Velveth``` reads sequence files and builds a dictionary of all words of length k, where k is the default max hash value of 31, thus defining exact local alignments between the reads. Analyzes kmers in the reads in preparation for assembly
 - ```Velvetg``` reads the alignments produced by ```Velveth```, builds a de Bruijn graph from them, removes errors and simplifies the graph and resolve repeats. Constructs the assembly and filters contigs from the graph
@@ -45,6 +45,28 @@ Now we want to optomize our velvet runs using Velvetoptimiser. It searches a sup
 We want each read paired with the one directly above or the one directly below
 
 To merge the two fastq files that we have, we will use the ```shufflereads_fastq.pl```, a command that is included with Velvet
+######  (```shufflereads_fasta.pl``` if your files are in fasta format)
+
+The format is
+```
+shuffleReads_fastq.pl [reads_1.fastq] [reads_2.fq] [merged_output.fastq]
+```
+For out results, imput the following script
+```
+/usr/local/velvet/velvet_1.2.10/contrib/shuffleSequences_fasta/shuffleSequences_fastq.pl B4546_1s.fastq B4546_2s.fastq merged.fastq
+```
+
+```/usr/local/velvet/velvet_1.2.10/contrib/VelvetOptimiser-2.2.4/VelvetOptimiser.pl -d 'velvet' -f '-fastq -shortPaired merged.fastq'```
+##### In addition to the VelvetOptimiser function, two flags are necessary. The flags require their parameter string to be encased with with '' or ""
+- ```-d [directory_name]``` 
+      - will create a directory for our output files
+- ```-f {[-file_format][-read_type] filename}``` contains similar information to the velveth function.
+
+
+- The optimisation function used for k-mer choice default 'n50' but this can be changed with the flag --optFuncKmer 
+- This time we are just using default range of hash values (or kmer) to try of 19 to 31, with the steps being 2 (the program is trying to find the most optimal hash size)
+- We are letting them know this is illumina paired end reads using the flag -shortPaired
+
 
 
 
