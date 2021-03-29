@@ -17,7 +17,7 @@ python2 /usr/local/quast/version_3.1/quast.py -o /2/scratch/NAME/first_student_w
 ```
 Python is the language we will use for our workshop. QUAST capable of using others as well (such as perl).
 For both codes, the flag ```-o [filename]``` will create an output file under the name we prodvide 
-```contigs.fasta``` and ```contigs.fasta``` are the contig files for SPAdes and Velvet respectively.
+```contigs.fasta``` and ```contigs.fa``` are the contig files for SPAdes and Velvet respectively.
 
 #### Let's now move over to the quast directory
 ```
