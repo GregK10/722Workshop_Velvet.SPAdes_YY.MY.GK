@@ -38,7 +38,7 @@ velvetg velvet_31 -cov_cutoff auto
 #### Flags for ```velvetg```
 - ```velvet_31``` is the file name for the dictionary
 - ```-cov_cutoff auto``` is the coverage cutoff value. We have it set to auto
-# - ```-exp_cov auto``` is the expercted coveregae (**EDIT**)
+##### - ```-exp_cov auto``` is the expercted coveregae (**EDIT**)
 
 ## Velvetoptimiser 
 Now we want to optomize our velvet runs using Velvetoptimiser. It searches a supplied hash value range (k-mer size) for the optimum, estimates the expected coverage and then searches for the optimum coverage cutoff. It does this by performing many runs of Velvet. 
