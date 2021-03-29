@@ -14,6 +14,7 @@ They have already been trimmed and are all set for genome assembly
 The Fastq file provided can be accessed from one of our scratch directories
 ```
 cp /2/scratch/yuying/*.fastq .
+Note to me, make symbolic links to the files
 ```
 These are not the full length F files as that will take SPAdes too long to run (velvet is faster). We will only be using a subset of 100000 forward and reverse reads.
 
