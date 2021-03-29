@@ -15,9 +15,13 @@ Similar to SPAdes, Velvet is a de novo assembler designed for short reads. Velve
 ## Velvet Workshop
  
 Similar to SPAdes, the code to run Velvet is straightforward
- 
+
+#### Step 1:
 ```
 velveth velvet_31 31 -shortPaired -fastq -separate ../B4546_1.fastq ../B4546_2.fastq
+```
+#### Step 2:
+```
 velvetg velvet_31 -cov_cutoff auto
 ```
 #### Here we are using two main velvet funtions ```velveth```and ```velvetg```
