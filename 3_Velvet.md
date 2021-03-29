@@ -60,7 +60,7 @@ For out results, imput the following script
 ```
 /usr/local/velvet/velvet_1.2.10/contrib/VelvetOptimiser-2.2.4/VelvetOptimiser.pl -d 'velvet' -f '-fastq -shortPaired merged.fastq'
 ```
-#### In addition to the VelvetOptimiser function, two flags are necessary. The flags require their parameter string to be encased with with '' or ""
+#### In addition to the VelvetOptimiser function, two flags are necessary. The flags require their parameter string to be encased with either '' or ""
 - ```-d [directory_name]``` will create a directory for our output files
 - ```-f {[-file_format][-read_type] filename}``` contains similar information to the velveth function.
 
@@ -69,11 +69,21 @@ For out results, imput the following script
 - This time we are just using default range of hash values (or kmer) to try of 19 to 31, with the steps being 2 (the program is trying to find the most optimal hash size)
  	-  In our workshop, the optimal hash value was determined to be 25
 - The flag ```-shortPaired``` represents that illumina paired end reads are used. 
+- coverage cutoff can also be set automatically to half the length weighted median contig coverage depth. Although you may wish to optimise this parameter in further iterations, this option allows you to quickly obtain a decent assembly in your first run
+
+### The output directory contains 8 files.
+
+29-03-2021-12-37-05_Logfile.txt  
+contigs.fa  
+Graph  
+Graph2  
+Log  
+PreGraph  
+Sequences  
+stats.txt
 
 
-
-
-
+### Now that we have assembled contigs using both SPAdes and Velvet, let us check out summary statistics using QUAST
 
 
 
