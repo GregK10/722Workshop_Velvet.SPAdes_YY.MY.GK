@@ -36,3 +36,5 @@ scp -r NAME@info.mcmaster.ca:~/quast/ .
 ```
 We can open them now and see how our two de novo assemblers compare to each other.
 
+### If you are interested in further readings, we have additional information on the 3 programs we demonstrated today, found [here](
+
