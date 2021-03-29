@@ -21,4 +21,7 @@ Original Reads --------------> Corrected Reads --------------> Simplified De Bru
 
 ## Workshop
 
-
+Running SPAdes is pretty straigtforward.
+```
+/usr/local/spades/bin/spades.py --pe1-1 B4546_1s.fastq --pe1-2 B4546_2s.fastq --careful -o spades
+```
