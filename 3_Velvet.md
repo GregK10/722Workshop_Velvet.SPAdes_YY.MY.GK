@@ -56,11 +56,11 @@ For out results, imput the following script
 /usr/local/velvet/velvet_1.2.10/contrib/shuffleSequences_fasta/shuffleSequences_fastq.pl B4546_1s.fastq B4546_2s.fastq merged.fastq
 ```
 
-#### to run Velvetoptimiser using the merged file we created we will use the following script
+### to run Velvetoptimiser using the merged file we created we will use the following script
 ```
 /usr/local/velvet/velvet_1.2.10/contrib/VelvetOptimiser-2.2.4/VelvetOptimiser.pl -d 'velvet' -f '-fastq -shortPaired merged.fastq'
 ```
-##### In addition to the VelvetOptimiser function, two flags are necessary. The flags require their parameter string to be encased with with '' or ""
+#### In addition to the VelvetOptimiser function, two flags are necessary. The flags require their parameter string to be encased with with '' or ""
 - ```-d [directory_name]``` will create a directory for our output files
 - ```-f {[-file_format][-read_type] filename}``` contains similar information to the velveth function.
 
