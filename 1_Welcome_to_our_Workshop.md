@@ -16,5 +16,5 @@ cp /2/scratch/manyou/workshop/*.fastq .
 ```
 While we are in our ```first_student_workshop``` directory, lets make 2 additional directories for our output files from both asspeblers, as well as a directory for our QUAST analysis.
 ```mkdir SPAdes_out ; mkdir velvet_out ; mkdir quast```
-#### We are all set to run both of de novo asemblers
+#### We are all set to run both of de novo asemblers. Click (here)[https://github.com/GregK10/722Workshop_Velvet.SPAdes_YY.MY.GK/blob/main/2_SPAdes.md] for the SPAdes portion.
 
