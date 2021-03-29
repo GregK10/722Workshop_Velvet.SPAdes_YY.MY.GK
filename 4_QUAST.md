@@ -26,8 +26,7 @@ cd /2/scratch/NAME/first_student_workshop/quast/
 #### we can now see that there are 2 directories containing multiple outputs.
 Let's copy this directory over to our home folder so we can download the results onto our own machines
 ```
-mkdir ~/first_student_workshop
-cd
+mkdir ~/first_student_workshop ; cd
 cp -r  /2/scratch/NAME/first_student_workshop/quast/
 ```
 #### To download the statistics
