@@ -6,6 +6,7 @@ Editors: GK, YF, and MY
 
 First, let's create a directory in your scratch folder. Feel free to name it whatever you like
 ```
+cd /2/scratch/NAME/
 mkdir first_student_workshop ; cd first_student_workshop/
 ```
 Next let's create symbolic links to the two fastq files we will be working with. These are paired end reads so there are 2 files.
