@@ -85,7 +85,7 @@ PreGraph
 Sequences  
 stats.txt
 
-### Now that we have assembled contigs using both SPAdes and Velvet, let us check out summary statistics using [QUAST](https://github.com/GregK10/722Workshop_Velvet.SPAdes_YY.MY.GK/blob/main/4_QUAST.md). Away We go!!
+### Now that we have assembled contigs using both SPAdes and Velvet, let us check out summary statistics using [QUAST](https://github.com/GregK10/722Workshop_Velvet.SPAdes_YY.MY.GK/blob/main/4_QUAST.md). Away we go!!
 
 
 
