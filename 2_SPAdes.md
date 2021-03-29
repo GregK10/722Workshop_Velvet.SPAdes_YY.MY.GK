@@ -56,6 +56,8 @@ spades.log
 tmp/
 warnings.log
 ```
+The most important file is ```contigs.fasta```. We will need to later generate summary statistics
+See below for more details for more details.
 ```
     scaffolds.fasta – resulting scaffolds (recommended for use as resulting sequences)
     contigs.fasta – resulting contigs
