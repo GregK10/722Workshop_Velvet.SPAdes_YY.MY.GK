@@ -14,7 +14,7 @@ The 2 Fastq files can be accessed from one of our scratch directories.
 ```
 ln -s /2/scratch/yuying/B4* .
 ```
-These are not the full length F files as that will take SPAdes too long to run (velvet is faster). We will only be using a subset of 100000 forward and reverse reads.
+These are not the full fastq files as that will take SPAdes too long to run (velvet is faster). We will only be using a random subset of 100,000 forward and reverse reads.
 
 ### Creating some directories
 While we are in our ```first_student_workshop``` directory, lets make 2 additional directories for our output files from both asspeblers, as well as a directory for our QUAST analysis.
