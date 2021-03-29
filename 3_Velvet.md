@@ -56,16 +56,19 @@ For out results, imput the following script
 /usr/local/velvet/velvet_1.2.10/contrib/shuffleSequences_fasta/shuffleSequences_fastq.pl B4546_1s.fastq B4546_2s.fastq merged.fastq
 ```
 
-```/usr/local/velvet/velvet_1.2.10/contrib/VelvetOptimiser-2.2.4/VelvetOptimiser.pl -d 'velvet' -f '-fastq -shortPaired merged.fastq'```
+#### to run Velvetoptimiser using the merged file we created we will use the following script
+```
+/usr/local/velvet/velvet_1.2.10/contrib/VelvetOptimiser-2.2.4/VelvetOptimiser.pl -d 'velvet' -f '-fastq -shortPaired merged.fastq'
+```
 ##### In addition to the VelvetOptimiser function, two flags are necessary. The flags require their parameter string to be encased with with '' or ""
-- ```-d [directory_name]``` 
-      - will create a directory for our output files
+- ```-d [directory_name]``` will create a directory for our output files
 - ```-f {[-file_format][-read_type] filename}``` contains similar information to the velveth function.
 
-
-- The optimisation function used for k-mer choice default 'n50' but this can be changed with the flag --optFuncKmer 
+#### Some details on Velvetoptimiser
+- The optimisation function used for k-mer choice default 'n50' but this can be changed with the flag ```--optFuncKmer```
 - This time we are just using default range of hash values (or kmer) to try of 19 to 31, with the steps being 2 (the program is trying to find the most optimal hash size)
-- We are letting them know this is illumina paired end reads using the flag -shortPaired
+ 	-  In our workshop, the optimal hash value was determined to be 25
+- The flag ```-shortPaired``` represents that illumina paired end reads are used. 
 
 
 
