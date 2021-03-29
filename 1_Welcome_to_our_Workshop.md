@@ -6,15 +6,13 @@ Editors: GK, YF, and MY
 
 First, let's create a directory in your scratch folder. Feel free to name it whatever you like
 ```
-mkdir first_student_workshop
-cd first_student_workshop
+mkdir first_student_workshop ; cd first_student_workshop/
 ```
-Next let's transfer the two fastq files we will be working with. These are paired end reads so there are 2 files.
-They have already been trimmed and are all set for genome assembly
-The Fastq file provided can be accessed from one of our scratch directories
+Next let's create symbolic links to the two fastq files we will be working with. These are paired end reads so there are 2 files.
+They have already been trimmed and are all set for genome assembly.
+The 2 Fastq files can be accessed from one of our scratch directories.
 ```
-cp /2/scratch/yuying/*.fastq .
-Note to me, make symbolic links to the files
+ln -s /2/scratch/yuying/B4* .
 ```
 These are not the full length F files as that will take SPAdes too long to run (velvet is faster). We will only be using a subset of 100000 forward and reverse reads.
 
