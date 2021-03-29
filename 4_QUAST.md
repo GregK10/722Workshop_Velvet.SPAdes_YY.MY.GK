@@ -3,7 +3,7 @@ Stands for **QU**ality **AS**sessment **T**ool. The tool evaluates genome assemb
 We will be using QUAST 3.1
 
 ### To run QUAST, we need to use the contig files that are in the output directory from both assemblers
-For organization, we what our outputs to be placed in our QUAST directory.
+For organization, we whan our outputs to be placed in our QUAST directory.
 
 - **Code for SPAdes**
 ```
