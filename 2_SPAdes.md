@@ -33,5 +33,45 @@ Running SPAdes is pretty straigtforward.
 - ```-o spades``` is the output file
 
 ### Understanding the SPAdes Output
+SPAdes creates its own directory in your current directory. There are many outputs that are created and we have listed them below
+```
+assembly_graph.fastg
+assembly_graph_with_scaffolds.gfa
+before_rr.fasta
+contigs.fasta
+contigs.paths
+corrected/
+dataset.info
+input_dataset.yaml
+K21/
+K33/
+K55/
+K77/
+misc/
+mismatch_corrector/
+params.txt
+scaffolds.fasta
+scaffolds.paths
+spades.log
+tmp/
+warnings.log
+```
+```
+    scaffolds.fasta – resulting scaffolds (recommended for use as resulting sequences)
+    contigs.fasta – resulting contigs
+    assembly_graph.fastg – assembly graph
+    contigs.paths – contigs paths in the assembly graph
+    scaffolds.paths – scaffolds paths in the assembly graph
+    before_rr.fasta – contigs before repeat resolution
 
+    corrected/ – files from read error correction
+        configs/ – configuration files for read error correction
+        corrected.yaml – internal configuration file
+        Output files with corrected reads
 
+    params.txt – information about SPAdes parameters in this run
+    spades.log – SPAdes log
+    dataset.info – internal configuration file
+    input_dataset.yaml – internal YAML data set file
+    K<##>/ – directory containing intermediate files from the run with K=<##>. These files should not be used as assembly results; use resulting contigs/scaffolds in files mentioned above.
+```
