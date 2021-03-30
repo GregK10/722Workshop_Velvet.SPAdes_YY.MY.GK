@@ -17,7 +17,7 @@ ln -s /2/scratch/yuying/B4* .
 ```
 These are not the full fastq files as that will take SPAdes too long to run (velvet is faster). We will only be using a random subset of 100,000 forward and reverse reads.
 
-The full fastq files can be found in:```/2/scratch/manyou/workshop/```
+The full fastq files can be found in: ```/2/scratch/manyou/workshop/```
 
 ### Creating some directories
 While we are in our ```first_student_workshop``` directory, lets make 2 additional directories for our output files from both assemblers, as well as a directory for our QUAST analysis.
