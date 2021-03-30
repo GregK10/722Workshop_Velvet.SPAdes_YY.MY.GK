@@ -44,7 +44,7 @@ velvetg velvet_31 -cov_cutoff auto
 This will set exp_cov to the length weighted median contig coverage, and cov_cutoff to half that value. Note that typing −exp_cov auto is equivalent to typing −exp_cov auto −cov_cutoff auto. On the contrary, −cov_cutoff auto doesn't affect the expected coverage setting.
 
 ## VelvetOptimiser workshop
-Now we want to optimize our velvet runs using VelvetOptimiser. It goes through a range of hash values (k-mer value) for the optimum k-mer size, estimates the expected coverage and then searches for the optimum coverage cutoff. It does this by performing many runs of Velvet. 
+You can also optimize your velvet assembly runs using VelvetOptimiser. This module goes through a range of hash values (k-mer value) for the optimum k-mer size, estimates the expected coverage and then searches for the optimum coverage cutoff. It does this by performing many runs of Velvet. 
 
 #### But first we need to merge the two fastq files together as Velvetoptimizer will only takes this single merged file as input
 We want each read is paired with the one directly above or the one directly below
