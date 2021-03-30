@@ -90,7 +90,7 @@ For our workshop, input in the following script
 
 ### The format for velvet optomiser is below
 ```
-/usr/local/velvet/velvet_1.2.10/contrib/VelvetOptimiser-2.2.4/VelvetOptimiser.pl -d 'velvet_opt' -f '-fastq -shortPaired merged.fastq'
+/usr/local/velvet/velvet_1.2.10/contrib/VelvetOptimiser-2.2.4/VelvetOptimiser.pl -d '[directory_nam]e' -f '{[-file_format][-read_type] filename}'
 ```
 #### Where
 - ```/usr/local/velvet/velvet_1.2.10/contrib/VelvetOptimiser-2.2.4/VelvetOptimiser.pl``` is the perl script
@@ -98,17 +98,17 @@ For our workshop, input in the following script
 - ```-f {[-file_format][-read_type] filename}``` is the input line you would have used in velveth
 #### In addition to the VelvetOptimiser script, two flags are necessary. The flags require their parameter string to be encased with either ' ' or " "
 
-#### Some details on VelvetOptimiser
-- The optimisation function for k-mer choice uses 'n50' by default but this can be changed with the flag ```--optFuncKmer```
-- The optimisation for coverage cutoff uses 'the total number of bases in large contigs' by default but can be changed with ```--optFuncCov```
-- This time we are just using the default range of hash values (or k-mer), which are set at strating hash value of 19, end hash value of 31, and the steps in the hash search being 2 (this program will use all these values to try and find the most optimal hash size)
- 	-  In our workshop, the optimal hash value was determined to be 25
-- The flag ```-shortPaired``` represents that illumina paired-end reads are used
 
 ### Now to run VelvetOptimiser on the merged file we created, we will use the following script
 ```
 /usr/local/velvet/velvet_1.2.10/contrib/VelvetOptimiser-2.2.4/VelvetOptimiser.pl -d 'velvet_opt' -f '-fastq -shortPaired merged.fastq'
 ```
+#### Some ways to customize your VelvetOptimiser run
+- The optimisation function for k-mer choice uses 'n50' by default but this can be changed with the flag ```--optFuncKmer```
+- The optimisation for coverage cutoff uses 'the total number of bases in large contigs' by default but can be changed with ```--optFuncCov```
+- This time we are just using the default range of hash values (or k-mer), which are set at strating hash value of 19, end hash value of 31, and the steps in the hash search being 2 (this program will use all these values to try and find the most optimal hash size)
+ 	-  In our workshop, the optimal hash value was determined to be 25
+- The flag ```-shortPaired``` represents that illumina paired-end reads are used
 
 ### The output directory contains 8 files
 
