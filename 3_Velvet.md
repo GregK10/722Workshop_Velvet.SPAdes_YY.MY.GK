@@ -4,7 +4,7 @@ Velvet is a _de novo_ assembler designed for short reads, and also works for ver
 
 #### Imput files can be
 - Fasta
-- FastQ
+- Fastq
 - sam 
 - bam 
  
