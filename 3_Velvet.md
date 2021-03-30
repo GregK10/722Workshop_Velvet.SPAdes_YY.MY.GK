@@ -39,7 +39,9 @@ velvetg velvet_31 -cov_cutoff auto
 ##### Flags for ```velvetg```
 - ```velvet_31``` is the name for the directory 
 - ```-cov_cutoff auto``` is the coverage cutoff value. We have it set to auto which will set this value to half the length weighted median contig coverage depth. Although you may wish to optimise this parameter in further iterations, auto allows you to quickly obtain a decent assembly in your first run.
-##### ```-exp_cov auto``` is the expected coverage (**EDIT**)
+
+##### ```-exp_cov auto``` is the expected coverage (**EDIT**) 
+Note that typing −exp_cov auto is equivalent to typing −exp_cov auto −cov_cutoff auto. On the contrary, −cov_cutoff auto doesn't affect the expected coverage setting.
 
 ## VelvetOptimiser workshop
 Now we want to optimize our velvet runs using Velvetoptimiser. It goes through a range of hash values (k-mer size) for the optimum k-mer size, estimates the expected coverage and then searches for the optimum coverage cutoff. It does this by performing many runs of Velvet. 
