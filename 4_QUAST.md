@@ -8,8 +8,10 @@ For organization, we want our contig.fasta outputs to be placed in our QUAST dir
 ```
 cd /2/scratch/NAME/first_student_workshop; mkdir quast;
 ```
-QUAST runs from a command line as follows: ```python quast.py [options] <contig_file(s)>```
-
+### QUAST runs from a command line as follows: 
+```
+python2 quast.py [options] <contig_file(s)>
+```
 #### The different parameters of the QUAST code are outlined below.
 - ```python2``` 
     - The scipt language we will use for our run of QUAST. QUAST is capable of using others as well (such as perl).
