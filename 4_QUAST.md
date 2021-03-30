@@ -57,6 +57,25 @@ scp -r NAME@info.mcmaster.ca:~/quast/ .
 ```
 We can open them now and see how our two de novo assemblers look and compare to each other.
 
+## Output
+```
+basic_stats/
+report_html_aux/
+quast.log
+report.pdf
+report.html
+report.txt
+report.tsv
+report.tex
+transposed_report.tsv
+transposed_report.txt
+transposed_report.tex
+```
+
+#### If you are using newer version of QUAST, you will get additional output
+``` icarus_viwers/
+icarus.html```
+
 #### If you are interested in further readings, we have additional information on the 3 programs we demonstrated today, found [here](https://github.com/GregK10/722Workshop_Velvet.SPAdes_YY.MY.GK/blob/main/5_Additional_readings.md).
 ### We hope you all enjoyed our workshop and had some fun!
 
