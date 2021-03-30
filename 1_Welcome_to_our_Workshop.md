@@ -2,6 +2,8 @@
 # Welcome to our workshop (2021-03-31)
 Editors: GK, YF, and MY 
 
+The sample we will be using in today's workshop is a _Cryptococcus gattii_ VGIII strain. Whole genome sequencing was performed at The Centre for Applied Genomics (The Hospital for Sick Children) on HiSeq X, PE150bp, with ~50 x coverage.
+
 ### Before we get into it, we want you to all be prepared
 
 First, let's create a directory in your scratch folder. Feel free to name it whatever you like
@@ -10,7 +12,7 @@ cd /2/scratch/NAME/
 mkdir first_student_workshop ; cd first_student_workshop/
 ```
 Next let's create symbolic links to the two fastq files we will be working with. These are paired end reads so there are 2 files.
-They have already been trimmed and are all set for genome assembly.
+They have already been trimmed using ```trimmomatic``` and are all set for genome assembly.
 The 2 Fastq files can be accessed from one of our scratch directories.
 ```
 ln -s /2/scratch/yuying/B4* .
