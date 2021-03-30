@@ -1,6 +1,6 @@
 # Introduction to Velvet
 
-Velvet is a _de novo_ assembler designed for short reads, and also works for very short reads (25 - 50 bp). Velvet removes errors present within these reads and then assembles them in to contigs. 
+Velvet is a _de novo_ assembler designed for short reads, and also works for very short reads (25 - 50 bp). Velvet removes errors present within these reads and then assembles them into contigs. 
 
 #### Imput files can be
 - Fasta
@@ -12,7 +12,7 @@ Velvet is a _de novo_ assembler designed for short reads, and also works for ver
  
 Velvet is useful as it can produce long contigs in excess of 150kb from paired end short reads
  
-## Velvet Workshop
+## Velvet Workshop (Velvet 1.2.10)
 
 Similar to SPAdes, the code to run Velvet is straightforward
 
@@ -26,50 +26,49 @@ Similar to SPAdes, the code to run Velvet is straightforward
 velveth velvet_31 31 -shortPaired -fastq -separate ../B4546_1.fastq ../B4546_2.fastq
 ```
 ##### Flags for ```velveth```
-- ```velvet_31``` is the file name for the dictionary
-- ```-shortpaired``` is the type of reads we are using
+- ```velvet_31``` is the name for the directory 
+- ```-shortpaired``` is the type of reads we are using (short and paired-end reads)
 - ```-fastq``` is read type file
-- ```-separate```  read1 and read2 are in separate files. Might be a useless flag
+- ```-separate```  indicated paired-end reads are in separate files. (Might be a useless flag, and only needed for older versions)
 
 ### Step 2 (velvetg):
 ```
 velvetg velvet_31 -cov_cutoff auto
 ```
 ##### Flags for ```velvetg```
-- ```velvet_31``` is the file name for the dictionary
+- ```velvet_31``` is the name for the directory 
 - ```-cov_cutoff auto``` is the coverage cutoff value. We have it set to auto
-##### ```-exp_cov auto``` is the expercted coveregae (**EDIT**)
+##### ```-exp_cov auto``` is the expected coveregae (**EDIT**)
 
 ## Velvetoptimiser workshop
-Now we want to optomize our velvet runs using Velvetoptimiser. It searches a supplied hash value range (k-mer size) for the optimum, estimates the expected coverage and then searches for the optimum coverage cutoff. It does this by performing many runs of Velvet. 
+Now we want to optimize our velvet runs using Velvetoptimiser. It searches a supplied hash value range (k-mer size) for the optimum size, estimates the expected coverage and then searches for the optimum coverage cutoff. It does this by performing many runs of Velvet. 
 
 #### But first we need to merge the two fastq files together as velvetoptimizer will only takes this single merged file as input
-We want each read paired with the one directly above or the one directly below
+We want each read is paired with the one directly above or the one directly below
 
-To merge the two fastq files that we have, we will use the ```shufflereads_fastq.pl```, a command that is included with Velvet
+To merge the two fastq files together, we will use the ```shufflereads_fastq.pl```, a command that is included with Velvet
 ######  (```shufflereads_fasta.pl``` if your files are in fasta format)
 
 The format is
 ```
 shuffleReads_fastq.pl [reads_1.fastq] [reads_2.fq] [merged_output.fastq]
 ```
-For out results, imput the following script
+For our workshop, input in the following script
 ```
 /usr/local/velvet/velvet_1.2.10/contrib/shuffleSequences_fasta/shuffleSequences_fastq.pl B4546_1s.fastq B4546_2s.fastq merged.fastq
 ```
 
-#### In addition to the VelvetOptimiser function, two flags are necessary. The flags require their parameter string to be encased with either '' or ""
+#### In addition to the VelvetOptimiser script, two flags are necessary. The flags require their parameter string to be encased with either '' or ""
 - ```-d [directory_name]``` will create a directory for our output files
-- ```-f {[-file_format][-read_type] filename}``` contains similar information to the velveth function
+- ```-f {[-file_format][-read_type] filename}``` is just the input line you would have put into velveth
 
 #### Some details on Velvetoptimiser
-- The optimisation function used for k-mer choice default 'n50' but this can be changed with the flag ```--optFuncKmer```
-- This time we are just using default range of hash values (or k-mer) to try of 19 to 31, with the steps being 2 (the program is trying to find the most optimal hash size)
+- The optimisation function used for k-mer choice is by default using 'n50' but this can be changed with the flag ```--optFuncKmer```
+- This time we are just using the default range of hash values (or k-mer), which are set at strating hash value of 19, end hash value of 31, and the steps in the hash search being 2 (this program will use all these values to try and find the most optimal hash size)
  	-  In our workshop, the optimal hash value was determined to be 25
-- The flag ```-shortPaired``` represents that illumina paired end reads are used
-- coverage cutoff can also be set automatically to half the length weighted median contig coverage depth. Although you may wish to optimise this parameter in further iterations, this option allows you to quickly obtain a decent assembly in your first run
+- The flag ```-shortPaired``` represents that illumina paired-end reads are used
 
-### to run Velvetoptimiser using the merged file we created we will use the following script
+### Now to run Velvetoptimiser on the merged file we created, we will use the following script
 ```
 /usr/local/velvet/velvet_1.2.10/contrib/VelvetOptimiser-2.2.4/VelvetOptimiser.pl -d 'velvet' -f '-fastq -shortPaired merged.fastq'
 ```
