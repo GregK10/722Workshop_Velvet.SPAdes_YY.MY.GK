@@ -6,7 +6,7 @@ We will be using QUAST 3.1
 For organization, we want our contig.fasta outputs to be placed in our QUAST directory.
 
 ```
-cd /2/scratch/NAME/first_student_workshop; mkdir quast; cd quast
+cd /2/scratch/NAME/first_student_workshop; mkdir quast; cd quast/
 ```
 
 The different parameters of the QUAST code are outlined below.
