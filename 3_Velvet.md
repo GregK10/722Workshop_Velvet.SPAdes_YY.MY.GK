@@ -53,13 +53,13 @@ velvetg [velveth_input_directory] [Read_coverage]
 velvetg velvet_31 -cov_cutoff auto
 ```
 
-##### ```-exp_cov auto``` is the expected coverage (**EDIT**) 
+#### ```-exp_cov auto``` is the expected coverage (**EDIT**) 
 This will set exp_cov to the length weighted median contig coverage, and cov_cutoff to half that value. Note that typing −exp_cov auto is equivalent to typing −exp_cov auto −cov_cutoff auto. On the contrary, −cov_cutoff auto doesn't affect the expected coverage setting.
 
 ## VelvetOptimiser workshop
 You can also optimize your velvet assembly runs using VelvetOptimiser. This module goes through a range of hash values (k-mer value) for the optimum k-mer size, estimates the expected coverage and then searches for the optimum coverage cutoff. It does this by performing many runs of Velvet. 
 
-#### But first we need to merge the two fastq files together as Velvetoptimizer will only takes this single merged file as input
+### But first we need to merge the two fastq files together as Velvetoptimizer will only takes this single merged file as input
 We want each read is paired with the one directly above or the one directly below
 
 To merge the two fastq files together, we will use the ```shufflereads_fastq.pl```, a command that is included with Velvet
@@ -74,7 +74,7 @@ For our workshop, input in the following script
 /usr/local/velvet/velvet_1.2.10/contrib/shuffleSequences_fasta/shuffleSequences_fastq.pl B4546_1s.fastq B4546_2s.fastq merged.fastq
 ```
 
-#### In addition to the VelvetOptimiser script, two flags are necessary. The flags require their parameter string to be encased with either ' ' or " "
+### In addition to the VelvetOptimiser script, two flags are necessary. The flags require their parameter string to be encased with either ' ' or " "
 - ```-d [directory_name]``` will create a directory for our output files
 - ```-f {[-file_format][-read_type] filename}``` is just the input line you would have put into velveth
 
@@ -101,4 +101,4 @@ PreGraph
 Sequences  
 stats.txt
 
-#### Now that we have assembled contigs using both SPAdes and Velvet, let us check out summary statistics using [QUAST](https://github.com/GregK10/722Workshop_Velvet.SPAdes_YY.MY.GK/blob/main/4_QUAST.md). Away we go!!
+### Now that we have assembled contigs using both SPAdes and Velvet, let us check out summary statistics using [QUAST](https://github.com/GregK10/722Workshop_Velvet.SPAdes_YY.MY.GK/blob/main/4_QUAST.md). Away we go!!
