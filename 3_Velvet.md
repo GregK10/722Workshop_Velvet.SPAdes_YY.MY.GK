@@ -53,9 +53,6 @@ velvetg [velveth_input_directory] [Read_coverage]
 velvetg velvet_31 -cov_cutoff auto
 ```
 
-##### ```-exp_cov auto``` is the expected coverage (**EDIT**) 
-This will set exp_cov to the length weighted median contig coverage, and cov_cutoff to half that value. Note that typing −exp_cov auto is equivalent to typing −exp_cov auto −cov_cutoff auto. On the contrary, −cov_cutoff auto doesn't affect the expected coverage setting.
-
 ### Output
 ##### contigs.fa: Contig sequences in FASTA format
 ##### stats.txt : a tab-separated table with statistics on the contigs
