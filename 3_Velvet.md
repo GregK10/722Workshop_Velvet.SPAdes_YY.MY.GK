@@ -18,15 +18,16 @@ Similar to SPAdes, the code to run Velvet is straightforward
 
 #### Here we are using two main velvet funtions ```velveth```and ```velvetg```
 
-- ```Velveth``` reads sequence files and builds a dictionary of all words of length k, where k is the default max hash value of 31, thus defining exact local alignments between the reads. Analyzes kmers in the reads in preparation for assembly
-- ```Velvetg``` reads the alignments produced by ```Velveth```, builds a de Bruijn graph from them, removes errors and simplifies the graph and resolve repeats. Constructs the assembly and filters contigs from the graph
+- ```velveth``` reads the sequence files and builds a dictionary of all words of length k. It constructs the k-mers using the reads in preparation for assembly (i.e. input into velvetg)
+- ```velvetg``` reads these alignments produced by ```velveth```, builds a de Bruijn graph from them, removes errors and simplifies the graph and resolve repeats. 
 
 ### Step 1 (velveth):
 ```
-velveth velvet_31 31 -shortPaired -fastq -separate ../B4546_1.fastq ../B4546_2.fastq
+velveth velvet_31 31 -shortPaired -fastq -separate ../B4546_1s.fastq ../B4546_2s.fastq
 ```
 ##### Flags for ```velveth```
 - ```velvet_31``` is the name for the directory 
+- 31 is the hash value we are using in this example. 
 - ```-shortpaired``` is the type of reads we are using (short and paired-end reads)
 - ```-fastq``` is read type file
 - ```-separate```  indicated paired-end reads are in separate files. (Might be a useless flag, and only needed for older versions)
@@ -37,8 +38,8 @@ velvetg velvet_31 -cov_cutoff auto
 ```
 ##### Flags for ```velvetg```
 - ```velvet_31``` is the name for the directory 
-- ```-cov_cutoff auto``` is the coverage cutoff value. We have it set to auto
-##### ```-exp_cov auto``` is the expected coveregae (**EDIT**)
+- ```-cov_cutoff auto``` is the coverage cutoff value. We have it set to auto which will set this value to half the length weighted median contig coverage depth. Although you may wish to optimise this parameter in further iterations, auto allows you to quickly obtain a decent assembly in your first run.
+##### ```-exp_cov auto``` is the expected coverage (**EDIT**)
 
 ## VelvetOptimiser workshop
 Now we want to optimize our velvet runs using Velvetoptimiser. It goes through a range of hash values (k-mer size) for the optimum k-mer size, estimates the expected coverage and then searches for the optimum coverage cutoff. It does this by performing many runs of Velvet. 
