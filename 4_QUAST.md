@@ -3,30 +3,36 @@ Stands for **QU**ality **AS**sessment **T**ool. The tool evaluates genome assemb
 We will be using QUAST 3.1
 
 ### To run QUAST, we need to use the contig files that are in the output directory from both assemblers
-For organization, we want our contig.fasta outputs to be placed in our QUAST directory.
+For organization, we want our contig.fasta outputs to be placed in our QUAST directory. Let's change to our working directory. Please make the quast directory if you have not done so already.
 
 ```
-cd /2/scratch/NAME/first_student_workshop; mkdir quast; cd quast/
+cd /2/scratch/NAME/first_student_workshop; mkdir quast;
 ```
+#### The different parameters of the QUAST code are outlined below.
 
-The different parameters of the QUAST code are outlined below.
+- ```python2``` 
+    - The scipt language we will use for our run of QUAST. QUAST is capable of using others as well (such as perl).
+- ```/usr/local/quast/version_3.1/quast.py```
+    -   QUAST module
+- ```-o [new_directory] ```
+    - Creates the output directory that contains all output file using the name we provide. 
+- ```contigs.fasta``` and ```contigs.fa``` 
+    - The contig files for SPAdes and Velvet respectively
 
-- ```python2```-> The scipt language we will use for our run of QUAST. QUAST is capable of using others as well (such as perl).
-- ```/usr/local/quast/version_3.1/quast.py```-> QUAST module
-- ```-o [new_directory] ```-> will create the output directory that contains all output file using the name we provide. 
-- ```contigs.fasta``` and ```contigs.fa``` are the contig files for SPAdes and Velvet respectively
-
-**Code for QUAST on the SPAdes contig**
+### Code for QUAST on the SPAdes contig
+Make sure your path is as follows
 ```
-cd /2/scratch/NAME/first_student_workshop/spades
-python2 /usr/local/quast/version_3.1/quast.py -o /2/scratch/NAME/first_student_workshop/quast/spades_out contigs.fasta
+pwd
+/2/scratch/NAME/first_student_workshop
 ```
-**Code for QUAST on the Velvet contig**
+Then input the following scripts
 ```
-cd /2/scratch/NAME/first_student_workshop/velvet
-python2 /usr/local/quast/version_3.1/quast.py -o /2/scratch/NAME/first_student_workshop/quast/velvet_out contigs.fa
+python2 /usr/local/quast/version_3.1/quast.py -o quast/spades_out spades/contigs.fasta
 ```
-
+### Code for QUAST on the Velvet contig
+```
+python2 /usr/local/quast/version_3.1/quast.py -o quast/velvet_out velvet/contigs.fa
+```
 #### Let's now move over to the quast directory
 ```
 cd /2/scratch/NAME/first_student_workshop/quast/
