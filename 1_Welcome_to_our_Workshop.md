@@ -26,4 +26,4 @@ While we are in our ```first_student_workshop``` directory, lets make 1 addition
 ```
 mkdir quast
 ```
-#### We are all set to run both of de novo asemblers. Click [here](https://github.com/GregK10/722Workshop_Velvet.SPAdes_YY.MY.GK/blob/main/2_SPAdes.md) to assemble a genome using SPAdes! We are just getting started hehehehehehehehe
+#### We are all set to run both of de novo asemblers. Click [here](https://github.com/GregK10/722Workshop_Velvet.SPAdes_YY.MY.GK/blob/main/2_SPAdes.md) to assemble a genome using SPAdes! We are just getting started :)
