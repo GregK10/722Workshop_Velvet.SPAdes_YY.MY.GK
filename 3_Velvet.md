@@ -57,11 +57,11 @@ velvetg velvet_31 -cov_cutoff auto
 This will set exp_cov to the length weighted median contig coverage, and cov_cutoff to half that value. Note that typing −exp_cov auto is equivalent to typing −exp_cov auto −cov_cutoff auto. On the contrary, −cov_cutoff auto doesn't affect the expected coverage setting.
 
 ### Output
-contigs.fa : Contig sequences in FASTA format
-stats.txt : a tab-separated table with statistics on the contigs
-Sequences : contains the sequences we put in
-Roadmaps: contains the index you just created
-Log: has a useful reminder of what commands you typed to get this assembly result
+##### contigs.fa: Contig sequences in FASTA format
+##### stats.txt : a tab-separated table with statistics on the contigs
+##### Sequences : contains the sequences we put in
+##### Roadmaps: contains the index you just created
+##### Log: has a useful reminder of what commands you typed to get this assembly result
 
 ## VelvetOptimiser workshop
 You can also optimize your velvet assembly runs using VelvetOptimiser. This module goes through a range of hash values (k-mer value) for the optimum k-mer size, estimates the expected coverage and then searches for the optimum coverage cutoff. It does this by performing many runs of Velvet. 
