@@ -32,7 +32,7 @@ velveth [ourput_directory] [hash value] -[read_type] -[file_format] -separate -[
 - 31 is the hash value we are using in this example. 
 - ```-shortpaired``` is the type of reads we are using (short and paired-end reads)
 - ```-fastq``` is read type file
-- ```-separate```  indicated paired-end reads are in separate files. (Might be a useless flag, and only needed for older versions)
+- ```-separate```  indicated paired-end reads are in separate files
 
 ### Let's run the command using our files
 ```
