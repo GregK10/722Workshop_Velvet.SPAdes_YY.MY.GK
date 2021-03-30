@@ -42,7 +42,7 @@ python2 /usr/local/quast/version_3.1/quast.py -o quast/spades_out spades/contigs
 ```
 #### Code for QUAST on the Velvethg contig
 ```
-python2 /usr/local/quast/version_3.1/quast.py -o quast/velvethg_out velvethg/contigs.fa
+python2 /usr/local/quast/version_3.1/quast.py -o quast/velvethg_out velvet_hg/contigs.fa
 ```
 #### Code for QUAST on the Velvetoptimiser contig
 ```
@@ -70,7 +70,7 @@ transposed_report.tex
 ```
 nano spades/report.txt
 nano velvet_opt/report.txt
-nano velvethg/report.txt
+nano velvet_hg/report.txt
 ```
 ### You can copy the quast folder to your computer from the cluster by following these steps
 You want to make a directory in your home directory for this to work
