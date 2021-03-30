@@ -25,7 +25,7 @@ Similar to SPAdes, the code to run Velvet is straightforward
 ```
 velveth velvet_31 31 -shortPaired -fastq -separate ../B4546_1.fastq ../B4546_2.fastq
 ```
-#### Flags for ```velveth```
+##### Flags for ```velveth```
 - ```velvet_31``` is the file name for the dictionary
 - ```-shortpaired``` is the type of reads we are using
 - ```-fastq``` is read type file
@@ -35,7 +35,7 @@ velveth velvet_31 31 -shortPaired -fastq -separate ../B4546_1.fastq ../B4546_2.f
 ```
 velvetg velvet_31 -cov_cutoff auto
 ```
-#### Flags for ```velvetg```
+##### Flags for ```velvetg```
 - ```velvet_31``` is the file name for the dictionary
 - ```-cov_cutoff auto``` is the coverage cutoff value. We have it set to auto
 ##### ```-exp_cov auto``` is the expercted coveregae (**EDIT**)
