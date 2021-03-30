@@ -5,7 +5,7 @@ We will be using QUAST 3.1
 ### To run QUAST, we need to use the contig files that are in the output directory from both assemblers
 For organization, we want our contig.fasta outputs to be placed in our QUAST directory.
 
--```
+```
 cd /2/scratch/NAME/first_student_workshop; mkdir quast; cd quast
 ```
 
