@@ -12,12 +12,12 @@ The different parameters of the QUAST code are outlined below.
 - ```-o [new_directory] ```-> will create the output directory that contains all output file using the name we provide. 
 - ```contigs.fasta``` and ```contigs.fa``` are the contig files for SPAdes and Velvet respectively
 
-- **Code for QUAST of the SPAdes contig**
+**Code for QUAST of the SPAdes contig**
 ```
 cd /2/scratch/NAME/first_student_workshop/spades
 python2 /usr/local/quast/version_3.1/quast.py -o /2/scratch/NAME/first_student_workshop/quast/spades_out contigs.fasta
 ```
-- **Code for QUAST of the Velvet contig**
+**Code for QUAST of the Velvet contig**
 ```
 cd /2/scratch/NAME/first_student_workshop/velvet
 python2 /usr/local/quast/version_3.1/quast.py -o /2/scratch/NAME/first_student_workshop/quast/velvet_out contigs.fa
