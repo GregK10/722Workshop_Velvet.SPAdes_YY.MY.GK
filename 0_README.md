@@ -7,5 +7,5 @@ Our intentions for this project is to demonstrate _de novo_ whole genome assembl
 - #### [SPAdes](https://github.com/GregK10/722Workshop_Velvet.SPAdes_YY.MY.GK/blob/main/2_SPAdes.md)
 - #### [Velvet](https://github.com/GregK10/722Workshop_Velvet.SPAdes_YY.MY.GK/blob/main/3_Velvet.md)
 
-After we generate the fasta files from SPAdes and Velvet, we will examine the summary statistics of the assemblies using QUAST.
+After we generate the contif fasta files from SPAdes and Velvet, we will examine the summary statistics of the assemblies using QUAST.
 - #### [QUAST](https://github.com/GregK10/722Workshop_Velvet.SPAdes_YY.MY.GK/blob/main/4_QUAST.md)
