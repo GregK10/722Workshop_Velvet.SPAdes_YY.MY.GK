@@ -62,23 +62,23 @@ warnings.log
 The most important file is ```contigs.fasta```. We will be using this contigs file later to generate summary statistics with QUAST.
 See below for more details on the other output files & directories.
 ```
-    scaffolds.fasta – resulting scaffolds (recommended for use as resulting sequences)
-    contigs.fasta – resulting contigs
-    assembly_graph.fastg – assembly graph
-    contigs.paths – contigs paths in the assembly graph
-    scaffolds.paths – scaffolds paths in the assembly graph
-    before_rr.fasta – contigs before repeat resolution
+scaffolds.fasta – resulting scaffolds (recommended for use as resulting sequences)
+contigs.fasta – resulting contigs
+assembly_graph.fastg – assembly graph
+contigs.paths – contigs paths in the assembly graph
+scaffolds.paths – scaffolds paths in the assembly graph
+before_rr.fasta – contigs before repeat resolution
 
-    corrected/ – files from read error correction
-        configs/ – configuration files for read error correction
-        corrected.yaml – internal configuration file
-        Output files with corrected reads
+corrected/ – files from read error correction
+    configs/ – configuration files for read error correction
+    corrected.yaml – internal configuration file
+    Output files with corrected reads
 
-    params.txt – information about SPAdes parameters in this run
-    spades.log – SPAdes log
-    dataset.info – internal configuration file
-    input_dataset.yaml – internal YAML data set file
-    K<##>/ – directory containing intermediate files from the run with K=<##>. These files should not be used as assembly results; use resulting contigs/scaffolds in files mentioned above.
+params.txt – information about SPAdes parameters in this run
+spades.log – SPAdes log
+dataset.info – internal configuration file
+input_dataset.yaml – internal YAML data set file
+K<##>/ – directory containing intermediate files from the run with K=<##>. These files should not be used as assembly results; use resulting contigs/scaffolds in files mentioned above.
 ```
 
 #### Now we have the SPAdes output ready. Now we will be assembling the genome using Velvet. Click [here](https://github.com/GregK10/722Workshop_Velvet.SPAdes_YY.MY.GK/blob/main/3_Velvet.md) to continue having fun!
