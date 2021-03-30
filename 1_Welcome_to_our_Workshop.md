@@ -13,7 +13,7 @@ mkdir first_student_workshop ; cd first_student_workshop/
 ```
 Next let's create symbolic links to the two fastq files we will be working with. These are paired end reads so there are 2 files.
 They have already been trimmed using ```trimmomatic``` and are all set for genome assembly.
-The two fastq files can be accessed from one of our scratch directories: B4546_1s.fastq and B4546_2s.fastq
+The two fastq files (B4546_1s.fastq and B4546_2s.fastq) can be accessed from one of our scratch directories: 
 ```
 ln -s /2/scratch/yuying/B4* .
 ```
