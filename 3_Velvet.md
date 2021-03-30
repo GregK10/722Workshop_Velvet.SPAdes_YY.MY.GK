@@ -61,7 +61,7 @@ For our workshop, input in the following script
 /usr/local/velvet/velvet_1.2.10/contrib/shuffleSequences_fasta/shuffleSequences_fastq.pl B4546_1s.fastq B4546_2s.fastq merged.fastq
 ```
 
-#### In addition to the VelvetOptimiser script, two flags are necessary. The flags require their parameter string to be encased with either '' or ""
+#### In addition to the VelvetOptimiser script, two flags are necessary. The flags require their parameter string to be encased with either ' ' or " "
 - ```-d [directory_name]``` will create a directory for our output files
 - ```-f {[-file_format][-read_type] filename}``` is just the input line you would have put into velveth
 
