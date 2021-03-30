@@ -36,15 +36,15 @@ Make sure your path is as follows
 pwd
 /2/scratch/NAME/first_student_workshop
 ```
-### Code for QUAST on the SPAdes contig
+#### Code for QUAST on the SPAdes contig
 ```
 python2 /usr/local/quast/version_3.1/quast.py -o quast/spades_out spades/contigs.fasta
 ```
-### Code for QUAST on the Velvethg contig
+#### Code for QUAST on the Velvethg contig
 ```
 python2 /usr/local/quast/version_3.1/quast.py -o quast/velvethg_out velvethg/contigs.fa
 ```
-### Code for QUAST on the Velvetoptimiser contig
+#### Code for QUAST on the Velvetoptimiser contig
 ```
 python2 /usr/local/quast/version_3.1/quast.py -o quast/velvet_opt_out velvet_opt/contigs.fa
 ```
@@ -52,7 +52,7 @@ python2 /usr/local/quast/version_3.1/quast.py -o quast/velvet_opt_out velvet_opt
 ```
 cd /2/scratch/NAME/first_student_workshop/quast/
 ```
-#### We can now see that there are 3 directories containing multiple outputs.
+#### We can now see that there are 3 directories containing multiple outputs. The outputs a listed below
 ```
 basic_stats/
 report_html_aux/
@@ -66,7 +66,7 @@ transposed_report.tsv
 transposed_report.txt
 transposed_report.tex
 ```
-### We can open them now and see how our two de novo assemblers look and compare to each other. Use separat
+### Let's open the reports created by QUAST and compare the _de novo_ assemblers compare to each other.
 ```
 nano spades/report.txt
 nano velvet_opt/report.txt
