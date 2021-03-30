@@ -39,7 +39,7 @@ velveth [ourput_directory] [hash value] -[read_type] -[file_format] -separate -[
 ```
 #### Flags for ```velveth```
 - ```velvet_31``` is the name for the directory. It will generate and fill the directory with the functions outputs.
-- 31 is the hash value we are using in this example. 
+- ```31``` is the hash value we are using in this example. You will want to optimize this value
 - ```-shortpaired``` is the type of reads we are using (short and paired-end reads)
 - ```-fastq``` is read type file
 - ```-separate```  indicated paired-end reads are in separate files
