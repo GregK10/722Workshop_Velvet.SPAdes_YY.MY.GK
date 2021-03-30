@@ -21,9 +21,9 @@ Original Reads --------------> Corrected Reads --------------> Simplified De Bru
 
 ## Workshop
 
-Running SPAdes is pretty straigtforward.
+Running SPAdes is pretty straigtforward. Below is the script format
 ```
-/usr/local/spades/bin/spades.py --pe1-1 B4546_1s.fastq --pe1-2 B4546_2s.fastq --careful -o spades
+/usr/local/spades/bin/spades.py --pe1-1 [file] --pe1-2 [file] --careful -o [output_directory]
 ```
 #### The funtions and flags are decribed below
 - ```/usr/local/spades/bin/spades.py``` is the spades module
@@ -31,7 +31,9 @@ Running SPAdes is pretty straigtforward.
 - ```--pe1-2 [file]``` is the file with reverse (right) reads for paired-end library number. In our workshop we use ```B4546_2s.fastq```
 - ```--careful``` is a flag for illumina reads that minimizes number of mismatches and short indels in the final contigs. Also runs MismatchCorrector – a post processing tool, which uses BWA tool (comes with SPAdes). This option is recommended only for assembly of small genomes
 - ```-o [file]``` is the output directory. We named it "spades"
-
+```
+/usr/local/spades/bin/spades.py --pe1-1 B4546_1s.fastq --pe1-2 B4546_2s.fastq --careful -o spades
+```
 #### Other things to note
 SPAdes will use multiple values for k-mer size and combine the resultant graphs. These sizes are automatically selected using maximum read length but can also be set using the flag ```-k <int,int,...>```. For our data, because the maximum read length is 150bp, the default k-mer values are set to 21, 33, 55 and 77.
 
