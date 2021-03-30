@@ -35,7 +35,7 @@ Running SPAdes is pretty straigtforward. Below is the script format
 /usr/local/spades/bin/spades.py --pe1-1 B4546_1s.fastq --pe1-2 B4546_2s.fastq --careful -o spades
 ```
 #### Other things to note
-SPAdes will use multiple values for k-mer size and combine the resultant graphs. These sizes are automatically selected using maximum read length but can also be set using the flag ```-k <int,int,...>```. For our data, because the maximum read length is 150bp, the default k-mer values are set to 21, 33, 55 and 77.
+SPAdes will use multiple values for k-mer size and combine the resultant graphs. These sizes are automatically selected using maximum read length but can also be set using the flag ```-k <int,int,...>```. For our data, because the maximum read length is 150bp, the default k-mer values are set to 21, 33, 55 and 77. It can also use 99 and 127 but that needs to defined in the script.
 
 ### Understanding the SPAdes Output
 SPAdes creates its own directory "spades" in your current directory. There are many outputs that are created and we have listed them below
