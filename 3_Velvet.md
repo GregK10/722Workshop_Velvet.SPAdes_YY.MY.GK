@@ -41,9 +41,9 @@ velvetg velvet_31 -cov_cutoff auto
 ##### ```-exp_cov auto``` is the expected coveregae (**EDIT**)
 
 ## Velvetoptimiser workshop
-Now we want to optimize our velvet runs using Velvetoptimiser. It searches a supplied hash value range (k-mer size) for the optimum size, estimates the expected coverage and then searches for the optimum coverage cutoff. It does this by performing many runs of Velvet. 
+Now we want to optimize our velvet runs using Velvetoptimiser. It goes through a range of hash values (k-mer size) for the optimum k-mer size, estimates the expected coverage and then searches for the optimum coverage cutoff. It does this by performing many runs of Velvet. 
 
-#### But first we need to merge the two fastq files together as velvetoptimizer will only takes this single merged file as input
+#### But first we need to merge the two fastq files together as Velvetoptimizer will only takes this single merged file as input
 We want each read is paired with the one directly above or the one directly below
 
 To merge the two fastq files together, we will use the ```shufflereads_fastq.pl```, a command that is included with Velvet
@@ -63,7 +63,8 @@ For our workshop, input in the following script
 - ```-f {[-file_format][-read_type] filename}``` is just the input line you would have put into velveth
 
 #### Some details on Velvetoptimiser
-- The optimisation function used for k-mer choice is by default using 'n50' but this can be changed with the flag ```--optFuncKmer```
+- The optimisation function for k-mer choice uses 'n50' by default but this can be changed with the flag ```--optFuncKmer```
+- The optimisation for coverage cutoff uses 'the total number of bases in large contigs' by default but can be changed with ```--optFuncCov```
 - This time we are just using the default range of hash values (or k-mer), which are set at strating hash value of 19, end hash value of 31, and the steps in the hash search being 2 (this program will use all these values to try and find the most optimal hash size)
  	-  In our workshop, the optimal hash value was determined to be 25
 - The flag ```-shortPaired``` represents that illumina paired-end reads are used
