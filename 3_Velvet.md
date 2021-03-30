@@ -54,13 +54,11 @@ velvetg velvet_31 -cov_cutoff auto
 ```
 
 Output
-```
- **contigs.fa** contains Contig sequences in FASTA format
- **stats.txt** is a tab-separated table with statistics on the contigs
- **Sequences** contains the sequences we put in
- **Roadmaps** contains the index you just created
- **Log** has a useful reminder of what commands you typed to get this assembly result
-```
+-```contigs.fa``` contains Contig sequences in FASTA format
+-```stats.txt``` is a tab-separated table with statistics on the contigs
+-```Sequences``` contains the sequences we put in
+-```Roadmaps``` contains the index you just created
+-```Log``` has a useful reminder of what commands you typed to get this assembly result
 
 ## VelvetOptimiser workshop
 You can also optimize your velvet assembly runs using VelvetOptimiser. This module goes through a range of hash values (k-mer value) for the optimum k-mer size, estimates the expected coverage and then searches for the optimum coverage cutoff. It does this by performing many runs of Velvet. 
