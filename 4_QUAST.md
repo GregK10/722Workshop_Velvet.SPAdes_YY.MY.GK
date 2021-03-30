@@ -10,18 +10,19 @@ cd /2/scratch/NAME/first_student_workshop; mkdir quast;
 ```
 ### QUAST runs from a command line as follows: 
 ```
-python2 quast.py [options] <contig_file(s)>
+python2 quast.py -o [new_directory] [contig_file(s)]
 ```
 #### The different parameters of the QUAST code are outlined below.
 - ```python2``` 
-    - The scipt language we will use for our run of QUAST. QUAST is capable of using others as well (such as perl).
+    - The script language we will use for our run of QUAST. QUAST is capable of using others as well (such as perl).
 - ```/usr/local/quast/version_3.1/quast.py```
     -   QUAST module
 - ```-o [new_directory] ```
     - Creates the output directory that contains all output file using the name we provide. 
 - ```contigs.fasta``` and ```contigs.fa``` 
     - The contig files for SPAdes and Velvet respectively
-###### Some other options
+  
+#### Some other options (that may or may not apply to _de novo_ assembly)
  - ```-t (or --threads) <int>```
      - Maximum number of threads. The default value is the number of CPUs. If QUAST fails to determine the number of CPUs, the number is set to 4
  - ```--scaffolds```
