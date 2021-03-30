@@ -24,7 +24,7 @@ cd /2/scratch/NAME/first_student_workshop; mkdir quast;
 Make sure your path is as follows
 ```
 pwd
-$ /2/scratch/NAME/first_student_workshop
+/2/scratch/NAME/first_student_workshop
 ```
 Then input the following scripts
 ```
