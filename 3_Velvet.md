@@ -21,7 +21,7 @@ Similar to SPAdes, the code to run Velvet is straightforward
 - ```Velveth``` reads sequence files and builds a dictionary of all words of length k, where k is the default max hash value of 31, thus defining exact local alignments between the reads. Analyzes kmers in the reads in preparation for assembly
 - ```Velvetg``` reads the alignments produced by ```Velveth```, builds a de Bruijn graph from them, removes errors and simplifies the graph and resolve repeats. Constructs the assembly and filters contigs from the graph
 
-#### Step 1 (velveth):
+### Step 1 (velveth):
 ```
 velveth velvet_31 31 -shortPaired -fastq -separate ../B4546_1.fastq ../B4546_2.fastq
 ```
@@ -31,7 +31,7 @@ velveth velvet_31 31 -shortPaired -fastq -separate ../B4546_1.fastq ../B4546_2.f
 - ```-fastq``` is read type file
 - ```-separate```  read1 and read2 are in separate files. Might be a useless flag
 
-#### Step 2 (velvetg):
+### Step 2 (velvetg):
 ```
 velvetg velvet_31 -cov_cutoff auto
 ```
