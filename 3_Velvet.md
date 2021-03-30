@@ -2,9 +2,19 @@
 
 Velvet is a _de novo_ assembler designed for short reads, and also works for very short reads (25 - 50 bp). Velvet removes errors present within these reads and then assembles them into contigs. 
 
-#### Imput files can be
-- Fasta
-- Fastq
+#### Reads categories are
+- short (default)
+- shortPaired
+- short2 (same as short, but for a separate insert-size library)
+- shortPaired2 (see above)
+- long (for Sanger, 454 or even reference sequences)
+- longPaired
+
+#### Supported imput files can be
+- fasta (default) 
+- fasta.gz
+- fastq
+- fastq.gz
 - sam 
 - bam 
  
@@ -53,12 +63,13 @@ velvetg [velveth_input_directory] [Read_coverage]
 velvetg velvet_31 -cov_cutoff auto
 ```
 
-#### Output
+#### Some important output
 - ```contigs.fa``` contains Contig sequences in FASTA format
 - ```stats.txt``` is a tab-separated table with statistics on the contigs
 - ```Sequences``` contains the sequences we put in
 - ```Roadmaps``` contains the index you just created
 - ```Log``` has a useful reminder of what commands you typed to get this assembly result
+- ```LastGraph``` describes in its entirety the graph produced by Velvet, in an idiosyncratic format
 
 ## VelvetOptimiser workshop
 You can also optimize your velvet assembly runs using VelvetOptimiser. This module goes through a range of hash values (k-mer value) for the optimum k-mer size, estimates the expected coverage and then searches for the optimum coverage cutoff. It does this by performing many runs of Velvet. 
