@@ -44,7 +44,7 @@ python2 /usr/local/quast/version_3.1/quast.py -o quast/spades_out spades/contigs
 ```
 python2 /usr/local/quast/version_3.1/quast.py -o quast/velvethg_out velvethg/contigs.fa
 ```
-### Code for QUAST on the Velvetopttomiser contig
+### Code for QUAST on the Velvetoptimiser contig
 ```
 python2 /usr/local/quast/version_3.1/quast.py -o quast/velvet_opt_out velvet_opt/contigs.fa
 ```
