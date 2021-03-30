@@ -33,7 +33,7 @@ Running SPAdes is pretty straigtforward.
 - ```-o [file]``` is the output directory. We named it "spades"
 
 #### Other things to note
-SPAdes will use multiple values for k-mer size and combine the resultant graphs. These sizes are automatically selected using maximum read length but can also be set using the flag ```-k <int,int,...>```. For our data, because this maximum read length is 150, the default k-mer values are set to 21, 33, 55 and 77.
+SPAdes will use multiple values for k-mer size and combine the resultant graphs. These sizes are automatically selected using maximum read length but can also be set using the flag ```-k <int,int,...>```. For our data, because the maximum read length is 150bp, the default k-mer values are set to 21, 33, 55 and 77.
 
 ### Understanding the SPAdes Output
 SPAdes creates its own directory "spades" in your current directory. There are many outputs that are created and we have listed them below
