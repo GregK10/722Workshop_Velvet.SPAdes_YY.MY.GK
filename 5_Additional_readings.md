@@ -19,4 +19,7 @@
 - [Velvet Manual - version 1.1 ](https://www.ebi.ac.uk/~zerbino/velvet/Manual.pdf)
 - [VelvetOptimiser](https://github.com/tseemann/VelvetOptimiser)
 
+### More Information on de novo assembler comparisons:
+[Assessment of de novo assemblers for draft genomes: a case study with fungal genomes](https://bmcgenomics.biomedcentral.com/track/pdf/10.1186/1471-2164-15-S9-S10.pdf)
+
 
