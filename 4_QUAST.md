@@ -20,13 +20,13 @@ cd /2/scratch/NAME/first_student_workshop; mkdir quast;
     - Creates the output directory that contains all output file using the name we provide. 
 - ```contigs.fasta``` and ```contigs.fa``` 
     - The contig files for SPAdes and Velvet respectively
-##### Some other options
-- ```-t (or --threads) <int>```
-    - Maximum number of threads. The default value is the number of CPUs. If QUAST fails to determine the number of CPUs, the number is set to 4
-- ```--scaffolds```
-    - The assemblies are scaffolds (rather than contigs). QUAST will add split versions of assemblies to the comparison. Assemblies are split by continuous fragments of N's of length ≥ 10
-- ```-R <path>```
-    - Reference genome file. Optional. Many metrics can't be evaluated without a reference. If this is omitted, QUAST will only report the metrics that can be evaluated without a reference
+###### Some other options
+ - ```-t (or --threads) <int>```
+     - Maximum number of threads. The default value is the number of CPUs. If QUAST fails to determine the number of CPUs, the number is set to 4
+ - ```--scaffolds```
+     - The assemblies are scaffolds (rather than contigs). QUAST will add split versions of assemblies to the comparison. Assemblies are split by continuous fragments of N's of length ≥ 10
+ - ```-R <path>```
+     - Reference genome file. Optional. Many metrics can't be evaluated without a reference. If this is omitted, QUAST will only report the metrics that can be evaluated without a reference
 
 ### Code for QUAST on the SPAdes contig
 Make sure your path is as follows
