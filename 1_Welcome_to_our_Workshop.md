@@ -21,9 +21,4 @@ These are not the full fastq files as that will take SPAdes a long to run (velve
 
 However, if you are interested, the full fastq files can be found in: ```/2/scratch/manyou/workshop/```
 
-### Creating a directory for the future
-While we are in our ```first_student_workshop``` directory, lets make 1 additional directory for our QUAST results.
-```
-mkdir quast
-```
 #### We are all set to run both of de novo asemblers. Click [here](https://github.com/GregK10/722Workshop_Velvet.SPAdes_YY.MY.GK/blob/main/2_SPAdes.md) to assemble a genome using SPAdes! We are just getting started :)
