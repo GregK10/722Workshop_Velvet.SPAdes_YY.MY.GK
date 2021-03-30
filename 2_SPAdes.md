@@ -32,8 +32,8 @@ Running SPAdes is pretty straigtforward.
 - ```--careful``` is a flag for illumina reads that minimizes number of mismatches and short indels in the final contigs. Also runs MismatchCorrector – a post processing tool, which uses BWA tool (comes with SPAdes). This option is recommended only for assembly of small genomes
 - ```-o [file]``` is the output directory. We named it "spades"
 
-##### Other things to note
-SPAdes will use multiple values for k-mer size and combines the resultant graphs. These sizes are automatically selected using maximum read length but can also be set using the flag ```-k <int,int,...>```. For our data, because this maximum read length is 150, the default k-mer values are set to 21, 33, 55 and 77.
+#### Other things to note
+SPAdes will use multiple values for k-mer size and combine the resultant graphs. These sizes are automatically selected using maximum read length but can also be set using the flag ```-k <int,int,...>```. For our data, because this maximum read length is 150, the default k-mer values are set to 21, 33, 55 and 77.
 
 ### Understanding the SPAdes Output
 SPAdes creates its own directory "spades" in your current directory. There are many outputs that are created and we have listed them below
