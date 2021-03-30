@@ -55,11 +55,11 @@ velvetg velvet_31 -cov_cutoff auto
 
 Output
 ```
- -**contigs.fa** contains Contig sequences in FASTA format
- -**stats.txt** is a tab-separated table with statistics on the contigs
- -**Sequences** contains the sequences we put in
- -**Roadmaps** contains the index you just created
- -**Log** has a useful reminder of what commands you typed to get this assembly result
+ **contigs.fa** contains Contig sequences in FASTA format
+ **stats.txt** is a tab-separated table with statistics on the contigs
+ **Sequences** contains the sequences we put in
+ **Roadmaps** contains the index you just created
+ **Log** has a useful reminder of what commands you typed to get this assembly result
 ```
 
 ## VelvetOptimiser workshop
