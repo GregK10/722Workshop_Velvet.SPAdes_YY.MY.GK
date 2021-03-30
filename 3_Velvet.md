@@ -62,7 +62,7 @@ velvetg [velveth_input_directory] [Read_coverage]
 velvetg velvet_hg -cov_cutoff auto
 ```
 
-#### Some important output
+#### Some important outputs
 - ```contigs.fa``` contains Contig sequences in FASTA format
 - ```stats.txt``` is a tab-separated table with statistics on the contigs
 - ```Sequences``` contains the sequences we put in
