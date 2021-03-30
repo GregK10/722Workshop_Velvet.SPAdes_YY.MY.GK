@@ -1,6 +1,6 @@
 
 # Welcome to our workshop (2021-03-31)
-Editors: GK, YF, and MY 
+**Editors: GK, YF, and MY** 
 
 The sample we will be using in today's workshop is a _Cryptococcus gattii_ VGIII strain. Whole genome sequencing was performed at The Centre for Applied Genomics (The Hospital for Sick Children) on HiSeq X, PE150bp, with ~50 x coverage.
 
