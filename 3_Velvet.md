@@ -40,7 +40,7 @@ velvetg velvet_31 -cov_cutoff auto
 - ```-cov_cutoff auto``` is the coverage cutoff value. We have it set to auto
 ##### ```-exp_cov auto``` is the expected coveregae (**EDIT**)
 
-## Velvetoptimiser workshop
+## VelvetOptimiser workshop
 Now we want to optimize our velvet runs using Velvetoptimiser. It goes through a range of hash values (k-mer size) for the optimum k-mer size, estimates the expected coverage and then searches for the optimum coverage cutoff. It does this by performing many runs of Velvet. 
 
 #### But first we need to merge the two fastq files together as Velvetoptimizer will only takes this single merged file as input
@@ -62,7 +62,7 @@ For our workshop, input in the following script
 - ```-d [directory_name]``` will create a directory for our output files
 - ```-f {[-file_format][-read_type] filename}``` is just the input line you would have put into velveth
 
-#### Some details on Velvetoptimiser
+#### Some details on VelvetOptimiser
 - The optimisation function for k-mer choice uses 'n50' by default but this can be changed with the flag ```--optFuncKmer```
 - The optimisation for coverage cutoff uses 'the total number of bases in large contigs' by default but can be changed with ```--optFuncCov```
 - This time we are just using the default range of hash values (or k-mer), which are set at strating hash value of 19, end hash value of 31, and the steps in the hash search being 2 (this program will use all these values to try and find the most optimal hash size)
