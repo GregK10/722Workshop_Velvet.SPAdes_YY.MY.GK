@@ -30,13 +30,13 @@ python2 quast.py -o [new_directory] [contig_file(s)]
  - ```-R <path>```
      - Reference genome file. Optional. Many metrics can't be evaluated without a reference. If this is omitted, QUAST will only report the metrics that can be evaluated without a reference
 
-### Code for QUAST on the SPAdes contig
+## Running QUAST
 Make sure your path is as follows
 ```
 pwd
 /2/scratch/NAME/first_student_workshop
 ```
-#### Then input the following scripts
+### Code for QUAST on the SPAdes contig
 ```
 python2 /usr/local/quast/version_3.1/quast.py -o quast/spades_out spades/contigs.fasta
 ```
@@ -52,7 +52,7 @@ python2 /usr/local/quast/version_3.1/quast.py -o quast/velvet_opt_out velvet_opt
 ```
 cd /2/scratch/NAME/first_student_workshop/quast/
 ```
-### We can now see that there are 3 directories containing multiple outputs.
+#### We can now see that there are 3 directories containing multiple outputs.
 ```
 basic_stats/
 report_html_aux/
@@ -66,14 +66,12 @@ transposed_report.tsv
 transposed_report.txt
 transposed_report.tex
 ```
-#### We can open them now and see how our two de novo assemblers look and compare to each other.
-
+### We can open them now and see how our two de novo assemblers look and compare to each other. Use separat
 ```
 nano spades/report.txt
 nano velvet_opt/report.txt
 nano velvethg/report.txt
 ```
-
 ### You can copy the quast folder to your computer from the cluster by following these steps
 You want to make a directory in your home directory for this to work
 ```
