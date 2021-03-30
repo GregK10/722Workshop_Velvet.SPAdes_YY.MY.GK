@@ -36,31 +36,23 @@ Make sure your path is as follows
 pwd
 /2/scratch/NAME/first_student_workshop
 ```
-Then input the following scripts
+#### Then input the following scripts
 ```
 python2 /usr/local/quast/version_3.1/quast.py -o quast/spades_out spades/contigs.fasta
 ```
-### Code for QUAST on the Velvet contig
+### Code for QUAST on the Velvethg contig
 ```
-python2 /usr/local/quast/version_3.1/quast.py -o quast/velvet_out velvet/contigs.fa
+python2 /usr/local/quast/version_3.1/quast.py -o quast/velvethg_out velvethg/contigs.fa
+```
+### Code for QUAST on the Velvetopttomiser contig
+```
+python2 /usr/local/quast/version_3.1/quast.py -o quast/velvet_opt_out velvet_opt/contigs.fa
 ```
 #### Let's now move over to the quast directory
 ```
 cd /2/scratch/NAME/first_student_workshop/quast/
 ```
-#### We can now see that there are 2 directories containing multiple outputs.
-Let's copy this directory over to our home folder so we can download the results onto our own machines
-```
-mkdir ~/first_student_workshop ; cd
-cp -r  /2/scratch/NAME/first_student_workshop/quast/
-```
-#### To download the statistics
-```
-scp -r NAME@info.mcmaster.ca:~/quast/ .
-```
-We can open them now and see how our two de novo assemblers look and compare to each other.
-
-## Output
+### We can now see that there are 3 directories containing multiple outputs.
 ```
 basic_stats/
 report_html_aux/
@@ -74,13 +66,26 @@ transposed_report.tsv
 transposed_report.txt
 transposed_report.tex
 ```
+#### We can open them now and see how our two de novo assemblers look and compare to each other.
 
-#### If you are using newer version of QUAST, you will get additional output
-``` 
-icarus_viwers/
-icarus.html
+```
+nano spades/report.txt
+nano velvet_opt/report.txt
+nano velvethg/report.txt
 ```
 
-#### If you are interested in further readings, we have additional information on the 3 programs we demonstrated today, found [here](https://github.com/GregK10/722Workshop_Velvet.SPAdes_YY.MY.GK/blob/main/5_Additional_readings.md).
+### You can copy the quast folder to your computer from the cluster by following these steps
+You want to make a directory in your home directory for this to work
+```
+mkdir ~/first_student_workshop ; cd
+cp -r  /2/scratch/NAME/first_student_workshop/quast/
+```
+#### To download the statistics
+```
+scp -r NAME@info.mcmaster.ca:~/quast/ .
+```
+
+### If you are interested in further readings, we have additional information on the 3 programs we demonstrated today, found [here](https://github.com/GregK10/722Workshop_Velvet.SPAdes_YY.MY.GK/blob/main/5_Additional_readings.md).
+
 ### We hope you all enjoyed our workshop and had some fun!
 
