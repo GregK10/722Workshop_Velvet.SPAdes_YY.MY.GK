@@ -103,7 +103,7 @@ For our workshop, input in the following script
 ```
 /usr/local/velvet/velvet_1.2.10/contrib/VelvetOptimiser-2.2.4/VelvetOptimiser.pl -d 'velvet_opt' -f '-fastq -shortPaired merged.fastq'
 ```
-#### Some ways to customize your VelvetOptimiser run
+### Some ways to customize your VelvetOptimiser run
 - The optimisation function for k-mer choice uses 'n50' by default but this can be changed with the flag ```--optFuncKmer```
 - The optimisation for coverage cutoff uses 'the total number of bases in large contigs' by default but can be changed with ```--optFuncCov```
 - This time we are just using the default range of hash values (or k-mer), which are set at strating hash value of 19, end hash value of 31, and the steps in the hash search being 2 (this program will use all these values to try and find the most optimal hash size)
@@ -121,4 +121,4 @@ PreGraph
 Sequences  
 stats.txt
 
-#### Now that we have assembled contigs using both SPAdes and Velvet, let us check out summary statistics using [QUAST](https://github.com/GregK10/722Workshop_Velvet.SPAdes_YY.MY.GK/blob/main/4_QUAST.md). Away we go!!
+### Now that we have assembled contigs using both SPAdes and Velvet, let us check out summary statistics using [QUAST](https://github.com/GregK10/722Workshop_Velvet.SPAdes_YY.MY.GK/blob/main/4_QUAST.md). Away we go!!
