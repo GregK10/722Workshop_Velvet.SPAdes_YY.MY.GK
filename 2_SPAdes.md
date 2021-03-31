@@ -29,8 +29,10 @@ Running SPAdes is pretty straigtforward. Below is the script format
 - ```/usr/local/spades/bin/spades.py``` is the spades module
 - ```--pe1-1 [file]``` is the file with forward (left) reads for paired-end library number. In our workshop we use ```B4546_1s.fastq```
 - ```--pe1-2 [file]``` is the file with reverse (right) reads for paired-end library number. In our workshop we use ```B4546_2s.fastq```
-- ```--careful``` is a flag for illumina reads that minimizes number of mismatches and short indels in the final contigs. Also runs MismatchCorrector – a post processing tool, which uses BWA tool (comes with SPAdes). This option is recommended only for assembly of small genomes
+- ```--careful``` is a flag for illumina reads that minimizes number of mismatches and short indels in the final contigs. Also runs MismatchCorrector – a post processing tool, which uses BWA (Burrows-Wheeler Aligner) tool (comes with SPAdes). This option is recommended only for assembly of small genomes
 - ```-o [output_directory]``` is the output directory. We named it "spades"
+
+### Let's imput our script into the terminal
 ```
 /usr/local/spades/bin/spades.py --pe1-1 B4546_1s.fastq --pe1-2 B4546_2s.fastq --careful -o spades
 ```
