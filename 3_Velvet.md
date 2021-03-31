@@ -79,7 +79,7 @@ We want each read is paired with the one directly above or the one directly belo
 To merge the two fastq files together, we will use the ```shufflereads_fastq.pl```, a command that is included with Velvet
 ######  (```shufflereads_fasta.pl``` if your files are in fasta format)
 
-### The format is
+### To merge the two fastq files, the format is
 ```
 shuffleReads_fastq.pl [reads_1.fastq] [reads_2.fq] [merged_output.fastq]
 ```
@@ -88,7 +88,7 @@ For our workshop, input in the following script
 /usr/local/velvet/velvet_1.2.10/contrib/shuffleSequences_fasta/shuffleSequences_fastq.pl B4546_1s.fastq B4546_2s.fastq merged.fastq
 ```
 
-### The format for velvet optomiser is below
+## Velvetoptimiser Format
 ```
 /usr/local/velvet/velvet_1.2.10/contrib/VelvetOptimiser-2.2.4/VelvetOptimiser.pl -d '[directory_nam]e' -f '{[-file_format][-read_type] filename}'
 ```
