@@ -3,11 +3,6 @@ Stands for **QU**ality **AS**sessment **T**ool. The tool evaluates genome assemb
 We will be using QUAST 3.1
 
 ### To run QUAST, we need to use the contig files that are in the output directory from our assemblers
-For organization, we want our contig.fasta outputs to be placed in our QUAST directory. Let's change to our working directory. Please make the quast directory if you have not done so already.
-
-```
-cd /2/scratch/NAME/first_student_workshop; mkdir quast;
-```
 ### QUAST runs from a command line as follows: 
 ```
 python2 quast.py -o [new_directory] [contig_file(s)]
