@@ -3,7 +3,7 @@ Stands for **QU**ality **AS**sessment **T**ool. The tool evaluates genome assemb
 We will be using QUAST 3.1
 
 ### To run QUAST, we need to use the contig files that are in the output directory from our assemblers
-### QUAST runs from a command line as follows: 
+#### QUAST runs from a command line as follows: 
 ```
 python2 quast.py -o [new_directory] [contig_file(s)]
 ```
