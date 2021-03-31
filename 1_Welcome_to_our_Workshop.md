@@ -19,6 +19,9 @@ ln -s /2/scratch/yuying/B4* .
 ```
 These are not the full fastq files as that will take SPAdes a long to run (velvet is faster). We will only be using a random subset of 100,000 forward and reverse reads.
 
-However, if you are interested, the full fastq files can be found in: ```/2/scratch/manyou/workshop/```
+However, if you are interested, the full fastq files can be found in:
+```
+/2/scratch/manyou/workshop/
+```
 
 #### We are all set to run both of de novo asemblers. Click [here](https://github.com/GregK10/722Workshop_Velvet.SPAdes_YY.MY.GK/blob/main/2_SPAdes.md) to assemble a genome using SPAdes! We are just getting started :)
