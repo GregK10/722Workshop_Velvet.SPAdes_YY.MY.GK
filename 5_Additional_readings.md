@@ -4,7 +4,7 @@
 
 - [How to apply de Bruijn graphs to genome assembly](https://www.nature.com/articles/nbt.2023)
 - [Genome Assembly: An Introduction (2016)](https://figshare.com/articles/presentation/Genome_Assembly_An_Introduction_2016_/2972323/1)
-
+- [From multiple kmers to muli-kmer de Bruijn graph](https://homolog.us/blogs/genome/2012/10/10/multi-kmer-de-bruijn-graphs/)
 
 ### More Information on SPAdes:
 
