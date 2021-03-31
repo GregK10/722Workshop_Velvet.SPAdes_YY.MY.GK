@@ -19,7 +19,8 @@
 - [Velvet Manual - version 1.1 ](https://www.ebi.ac.uk/~zerbino/velvet/Manual.pdf)
 - [VelvetOptimiser](https://github.com/tseemann/VelvetOptimiser)
 
-### More information on _de novo_ assembler comparisons:
+### More information on QUAST and _de novo_ assembler comparisons:
+- [QUAST: quality assessment tool for genome assemblies](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3624806/)
 - [Assessment of de novo assemblers for draft genomes: a case study with fungal genomes](https://bmcgenomics.biomedcentral.com/track/pdf/10.1186/1471-2164-15-S9-S10.pdf)
 - [Benchmarking of de novo assembly tools: SPAdes 3.9 vs Velvet 1.2](https://www.eurl-ar.eu/CustomerData/Files/Folders/34-wgs/537_7-1-engage-benchmarking-of-de-novo-assembly-tools-spades-3-9-vs-velvet-1-2.pdf)
 - [GAGE-B: an evaluation of genome assemblers for bacterial organisms](https://academic.oup.com/bioinformatics/article/29/14/1718/229886)
