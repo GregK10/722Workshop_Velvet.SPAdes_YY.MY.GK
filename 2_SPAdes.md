@@ -85,6 +85,6 @@ input_dataset.yaml – internal YAML data set file
 K<##>/ – directory containing intermediate files from the run with K=<##>. These files should not be used as assembly results; use resulting contigs/scaffolds in files mentioned above.
 ```
 
-#### Now we have the SPAdes output ready. Now we will be assembling the genome using Velvet. Click [here](https://github.com/GregK10/722Workshop_Velvet.SPAdes_YY.MY.GK/blob/main/3_Velvet.md) to continue having fun!
+### Now we have the SPAdes output ready. Now we will be assembling the genome using Velvet. Click [here](https://github.com/GregK10/722Workshop_Velvet.SPAdes_YY.MY.GK/blob/main/3_Velvet.md) to continue having fun!
 
 
