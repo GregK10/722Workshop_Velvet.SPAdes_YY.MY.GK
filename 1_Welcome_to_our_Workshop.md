@@ -17,7 +17,7 @@ The two fastq files (B4546_1s.fastq and B4546_2s.fastq) can be accessed from one
 ```
 ln -s /2/scratch/yuying/B4* .
 ```
-These are not the full fastq files as that will take SPAdes a long to run (velvet is faster). We will only be using a random subset of 100,000 forward and reverse reads.
+These are not the full fastq files as that will take SPAdes a long time to run (velvet is faster). We will only be using a subset of 100,000 forward and reverse reads.
 
 However, if you are interested, the full fastq files can be found in:
 ```
